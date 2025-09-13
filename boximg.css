@@ -1,0 +1,17 @@
+img{
+    border: 10px ridge rgb(174, 202, 47);
+    border-radius: 30px;
+}
+
+nav{
+    background-color: rgb(187, 18, 100);
+    height: 200px;
+    box-shadow: 30px 30px 30px blue inset;
+}
+ div{
+    margin-top: 30px;
+    background-image: url(app.png);
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
