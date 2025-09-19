@@ -20,15 +20,22 @@ body {
   color: white;
 }
 
-
-.contact-us-container {
-    width: 50%;
-    margin: 20px auto;
-    background-color: #8e2de2;
-    height: 100vh;
+.contact-us-container,
+.login-container,
+.filled-contact-container,
+.pixelgrade-container,
+.corporate-contact-container {
+    width: 90%;              
+    margin: 20px auto;                
+    min-height: 100vh;       
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* ===== Contact Us ===== */
+.contact-us-container {
+    background-color: #8e2de2;
 }
 
 .contact-us-card {
@@ -74,14 +81,11 @@ body {
     background-color: #d32f2f;
 }
 
+/* ===== Login ===== */
 .login-container {
-    width: 50%;
-    margin: 20px auto;
+    width: 90%;              
+    margin: 20px auto;      
     background-color: #00b4d8;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .login-card {
@@ -114,14 +118,11 @@ body {
     background-color: #0096c7;
 }
 
+/* ===== Filled Contact ===== */
 .filled-contact-container {
+    width: 90%;              
+    margin: 20px auto;      
     background-color: #e63946;
-    width: 50%;
-    margin: 20px auto;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .filled-contact-card {
@@ -160,14 +161,11 @@ body {
     background-color: #d32f2f;
 }
 
+/* ===== Pixelgrade ===== */
 .pixelgrade-container {
-    width: 50%;
-    margin: 20px auto;
+    width: 90%;              
+    margin: 20px auto;      
     background: linear-gradient(to bottom, #9b59b6 50%, #f5f3f6 50%);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .pixelgrade-card {
@@ -204,19 +202,15 @@ body {
     margin-top: 10px; 
 }
 
-
 .pixelgrade-card button:hover {
     background-color: #27ae60;
 }
 
+/* ===== Corporate Contact ===== */
 .corporate-contact-container {
+    width: 90%;              
+    margin: 20px auto;      
     background-color: #6a0dad;
-    width: 50%;
-    margin: 20px auto;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .corporate-contact-card {
@@ -238,6 +232,11 @@ body {
     border-radius: 5px;
 }
 
+.corporate-contact-card textarea {
+    height: 100px; 
+    resize: none;
+}
+
 .corporate-contact-card button {
     background-color: #6a0dad;
     color: white;
@@ -249,9 +248,4 @@ body {
 
 .corporate-contact-card button:hover {
     background-color: #5a0a9d;
-}
-
-.corporate-contact-card textarea {
-    height: 100px; 
-    resize: none;
 }
