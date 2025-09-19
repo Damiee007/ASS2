@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    background-color: #9b59b6;
+    font-family: Arial, sans-serif;
+}
+
+.nav-links a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px 15px 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #2ecc71;
+  color: white;
+}
+
+/* Pixelgrade */
+.pixelgrade-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #9b59b6 50%, #f5f3f6 50%);
+}
+
+.pixelgrade-card {
+    background: white;
+    padding: 20px;
+    box-shadow: #9b59b6 0px 4px 6px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.pixelgrade-card input[type="text"],
+.pixelgrade-card input[type="password"] {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pixelgrade-card button {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pixelgrade-card .continue-btn {
+    background-color: #7f8c8d;
+    color: white;
+    margin-top: 10px;
+}
+
+.pixelgrade-card button:hover {
+    background-color: #27ae60;
+}

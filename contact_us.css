@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    background-color: #8e2de2;
+    font-family: Arial, sans-serif;
+}
+
+.nav-links a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px 15px 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #e63946;
+  color: white;
+}
+
+/* Contact Us */
+.contact-us-container {
+    background-color: #8e2de2;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.contact-us-card input[type="text"],
+.contact-us-card input[type="email"],
+.contact-us-card input[type="tel"],
+.contact-us-card textarea {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-us-card textarea {
+    height: 100px; 
+    resize: none;
+}
+
+.contact-us-card .radio-group {
+    text-align: left;
+    accent-color: #e63946;
+    margin: 10px 0;
+}
+
+.contact-us-card button {
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.contact-us-card button:hover {
+    background-color: #d32f2f;
+}
