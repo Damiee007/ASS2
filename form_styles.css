@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.nav-links a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px 15px 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #008080;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #008080;
+  color: white;
+}
+
+
+.contact-us-container {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #8e2de2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.contact-us-card input[type="text"],
+.contact-us-card input[type="email"],
+.contact-us-card input[type="tel"],
+.contact-us-card textarea {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-us-card textarea {
+    height: 100px; 
+    resize: none;
+}
+
+.contact-us-card .radio-group {
+    text-align: left;
+    accent-color: #e63946;
+    margin: 10px 0;
+}
+
+.contact-us-card button {
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.contact-us-card button:hover {
+    background-color: #d32f2f;
+}
+
+.login-container {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #00b4d8;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.login-card input[type="text"],
+.login-card input[type="password"] {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-card button {
+    background-color: #00b4d8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-card button:hover {
+    background-color: #0096c7;
+}
+
+.filled-contact-container {
+    background-color: #e63946;
+    width: 50%;
+    margin: 20px auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filled-contact-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.filled-contact-card input[type="text"],
+.filled-contact-card input[type="email"],
+.filled-contact-card textarea {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filled-contact-card textarea {
+    height: 100px; 
+    resize: none;
+}
+
+.filled-contact-card button {
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.filled-contact-card button:hover {
+    background-color: #d32f2f;
+}
+
+.pixelgrade-container {
+    width: 50%;
+    margin: 20px auto;
+    background: linear-gradient(to bottom, #9b59b6 50%, #f5f3f6 50%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pixelgrade-card {
+    background: white;
+    padding: 20px;
+    box-shadow: #9b59b6 0px 4px 6px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.pixelgrade-card input[type="text"],
+.pixelgrade-card input[type="password"] {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pixelgrade-card button {
+    background-color: #2ecc71; 
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pixelgrade-card .continue-btn {
+    background-color: #7f8c8d; 
+    color: white; 
+    margin-top: 10px; 
+}
+
+
+.pixelgrade-card button:hover {
+    background-color: #27ae60;
+}
+
+.corporate-contact-container {
+    background-color: #6a0dad;
+    width: 50%;
+    margin: 20px auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corporate-contact-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.corporate-contact-card input[type="text"],
+.corporate-contact-card input[type="email"],
+.corporate-contact-card input[type="tel"],
+.corporate-contact-card textarea {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.corporate-contact-card button {
+    background-color: #6a0dad;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.corporate-contact-card button:hover {
+    background-color: #5a0a9d;
+}
+
+.corporate-contact-card textarea {
+    height: 100px; 
+    resize: none;
+}
