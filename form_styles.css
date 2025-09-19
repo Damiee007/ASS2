@@ -20,22 +20,22 @@ body {
   color: white;
 }
 
+/* ===== Contact Us ===== */
+.contact-us-container {
+    background-color: #8e2de2;
+}
+
 .contact-us-container,
 .login-container,
 .filled-contact-container,
 .pixelgrade-container,
 .corporate-contact-container {
-    width: 90%;              
+    width: 100%;              
     margin: 20px auto;                
     min-height: 100vh;       
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/* ===== Contact Us ===== */
-.contact-us-container {
-    background-color: #8e2de2;
 }
 
 .contact-us-card {
@@ -83,7 +83,7 @@ body {
 
 /* ===== Login ===== */
 .login-container {
-    width: 90%;              
+    width: 100%;              
     margin: 20px auto;      
     background-color: #00b4d8;
 }
@@ -120,7 +120,7 @@ body {
 
 /* ===== Filled Contact ===== */
 .filled-contact-container {
-    width: 90%;              
+    width: 100%;              
     margin: 20px auto;      
     background-color: #e63946;
 }
@@ -163,7 +163,7 @@ body {
 
 /* ===== Pixelgrade ===== */
 .pixelgrade-container {
-    width: 90%;              
+     width: 100%;              
     margin: 20px auto;      
     background: linear-gradient(to bottom, #9b59b6 50%, #f5f3f6 50%);
 }
@@ -208,7 +208,7 @@ body {
 
 /* ===== Corporate Contact ===== */
 .corporate-contact-container {
-    width: 90%;              
+    width: 100%;              
     margin: 20px auto;      
     background-color: #6a0dad;
 }
@@ -225,7 +225,7 @@ body {
 .corporate-contact-card input[type="email"],
 .corporate-contact-card input[type="tel"],
 .corporate-contact-card textarea {
-    width: 90%;
+    width: 100%;
     margin: 10px 0;
     padding: 10px;
     border: 1px solid #ccc;
