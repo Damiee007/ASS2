@@ -43,12 +43,12 @@ body {
 .corporate-contact-card input[type="email"],
 .corporate-contact-card input[type="tel"],
 .corporate-contact-card textarea {
-    width: 90%;              
-    margin: 10px auto;       
+    width: 90%;
+    margin: 10px auto;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    display: block;          
+    display: block;
 }
 
 .corporate-contact-card textarea {
