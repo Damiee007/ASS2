@@ -130,6 +130,7 @@ body {
   width: 360px;
   padding: 24px;
   border-radius: 12px;
+  margin-bottom: 20px;
   background: linear-gradient(90deg,#3fe6c2,#6fd9ff);
   display: flex;
   justify-content: center;
