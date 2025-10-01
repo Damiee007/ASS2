@@ -1,10 +1,8 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #e63946;
+    background-color: rgb(197, 208, 212);
 }
 
-.logo img {
+.logo2 img {
     width: 60px;
     height: 60px;
     display: flex;
@@ -53,46 +51,61 @@ body {
     }
 }
 
-.filled-contact-container {
-    width: 100%;
-    min-height: auto;
-    display: flex;
-    justify-content: center;
-    background-color: #e63946;
-}
 
-.filled-contact-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    text-align: center;
-}
-
-.filled-contact-card input[type="text"],
-.filled-contact-card input[type="email"],
-.filled-contact-card textarea {
-    width: 90%;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.filled-contact-card textarea {
-    height: 100px; 
-    resize: none;
-}
-
-.filled-contact-card button {
-    background-color: orange;
-    color: white;
-    padding: 10px 20px;
-    border: none;
+.navbar {
+    background-color: #4a6cf7;
     border-radius: 20px;
-    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
 }
 
-.filled-contact-card button:hover {
-    background-color: orange;
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+    background-color: #4a6cf7;
 }
+
+.navbar a:hover {
+    color: orange;
+}
+
+.links {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: #4a6cf7;
+    gap: 10px;
+}
+
+.cta_section {
+    background-color: #4a6cf7;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 24px;
+    justify-content: center;
+    gap: 10px;
+    text-align: right;
+    margin-right: 80px;
+    font-size: small;
+    font-weight: bold;
+    color: white;
+}
+
+.logo img {
+    margin: 10px;
+    width: 100px;
+    margin-left: 60px;
+    object-fit: contain;
+    height: 100px;
+}
+
+.ph {
+    color: orange;
+    font-size: small;
+    font-weight: bold;
+    background-color: #4a6cf7;
+} 

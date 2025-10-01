@@ -1,7 +1,8 @@
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #e63946;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo img {
@@ -53,46 +54,39 @@ body {
     }
 }
 
-.filled-contact-container {
-    width: 100%;
-    min-height: auto;
+h1 {
+    color: #333;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #4a6cf7;
+    color: white;
     display: flex;
     justify-content: center;
-    background-color: #e63946;
+    align-items: center;
+    border-radius: 8px;
+    margin: 20px;
+    transition: all 0.3s ease;
 }
 
-.filled-contact-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    text-align: center;
+.rotate {
+    transform: rotate(20deg);
 }
 
-.filled-contact-card input[type="text"],
-.filled-contact-card input[type="email"],
-.filled-contact-card textarea {
-    width: 90%;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.scale {
+    transform: scale(1.5);
 }
 
-.filled-contact-card textarea {
-    height: 100px; 
-    resize: none;
+.translate {
+    transform: translate(50px, 20px);
 }
 
-.filled-contact-card button {
-    background-color: orange;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
+.skew {
+    transform: skew(20deg, 10deg);
 }
 
-.filled-contact-card button:hover {
-    background-color: orange;
+.box:hover {
+    transform: rotate(0deg) scale(1) translate(0,0) skew(0,0);
 }
