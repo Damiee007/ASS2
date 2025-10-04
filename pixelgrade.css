@@ -8,12 +8,14 @@ body {
     align-items: center;
 }
 
-.container {
+.pixelgrade-container {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .pixelgrade-card {
@@ -22,6 +24,7 @@ body {
     box-shadow: 0px 6px 12px rgba(0,0,0,0.15);
     border-radius: 10px;
     width: 320px;
+    max-width: 90%;
     text-align: center;
 }
 
@@ -51,4 +54,29 @@ body {
 
 .pixelgrade-card button:hover {
     background-color: #27ae60;
+}
+
+/* Ensure navbar has padding on small screens */
+@media (max-width: 768px) {
+    .nav-links {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .pixelgrade-card {
+        width: 90%;
+    }
+
+    body {
+        align-items: stretch;
+    }
+
+    .pixelgrade-container {
+        padding: 40px 10px;
+    }
 }
