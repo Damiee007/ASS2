@@ -12,9 +12,9 @@ body {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
-    padding: 20px;
+    padding: 40px 20px 20px;
     box-sizing: border-box;
 }
 
@@ -56,7 +56,6 @@ body {
     background-color: #27ae60;
 }
 
-/* Ensure navbar has padding on small screens */
 @media (max-width: 768px) {
     .nav-links {
         width: 100%;
@@ -68,15 +67,12 @@ body {
         gap: 5px;
     }
 
+    .pixelgrade-container {
+        align-items: flex-start;
+        padding: 20px 10px;
+    }
+
     .pixelgrade-card {
         width: 90%;
-    }
-
-    body {
-        align-items: stretch;
-    }
-
-    .pixelgrade-container {
-        padding: 40px 10px;
     }
 }
