@@ -19,6 +19,8 @@
     padding: 8px 15px;
     margin: 10px auto;
     max-width: 95%;
+    margin-left: 10px;
+    margin-right: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     scroll-behavior: smooth;
 }

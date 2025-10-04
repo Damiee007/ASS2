@@ -1,23 +1,31 @@
 body {
+    margin: 0;
     background-color: rgb(197, 208, 212);
 }
 
+.nav-links, .navbar {
+    margin: 0;
+    padding: 0;
+}
+
 .logo img {
-    margin: 10px;
+    margin: 0;
     width: 100px;
-    margin-left: 10px;
-    object-fit: contain;
     height: 100px;
+    object-fit: contain;
 }
 
 .navbar {
     background-color: #4a6cf7;
     border-radius: 20px;
     font-size: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
+    padding: 0 20px;
 }
 
 .navbar a {
@@ -43,12 +51,11 @@ body {
     background-color: #4a6cf7;
     border-radius: 20px;
     padding: 10px;
-    font-size: 24px;
+    font-size: small;
     justify-content: center;
     gap: 10px;
     text-align: right;
     margin-right: 80px;
-    font-size: small;
     font-weight: bold;
     color: white;
 }
@@ -58,7 +65,7 @@ body {
     font-size: small;
     font-weight: bold;
     background-color: #4a6cf7;
-} 
+}
 
 .mr {
     color: white;
