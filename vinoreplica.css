@@ -4,17 +4,19 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
     font-family: Arial, sans-serif;
 }
 
 .main {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
+    background: linear-gradient(to top left, rgba(9, 9, 111, 0.808), rgba(0, 128, 49, 0.441));
     overflow: hidden;
-    background: linear-gradient(to top left, rgba(9, 9, 111, 0.808), rgba(0, 128, 49, 0.441) 100%);
-    inset: 0;
 }
 
 .bg-slideshow {
@@ -59,8 +61,6 @@ body {
     display: flex;
     list-style: none;
     gap: 10px;
-    padding: 0;
-    margin: 0;
 }
 
 .links a {
@@ -88,8 +88,7 @@ body {
     font-size: 28px;
 }
 
-.nh,
-.cu {
+.nh, .cu {
     margin: 0;
     font-size: small;
     line-height: 1.2;
@@ -126,12 +125,11 @@ body {
 
 .overlay-text h1 {
     font-size: 3rem;
-    margin: 0 0 10px 0;
+    margin-bottom: 10px;
 }
 
 .overlay-text p {
     font-size: 1.2rem;
-    margin: 0;
 }
 
 .info-section {
@@ -150,8 +148,8 @@ body {
 }
 
 .info-text {
-    flex: 1;
-    min-width: 300px;
+    flex: 1 1 300px;
+    min-width: 250px;
 }
 
 .info-text h2 {
@@ -168,28 +166,30 @@ body {
 }
 
 .info-image {
-    flex: 1;
-    min-width: 250px;
+    flex: 1 1 250px;
     display: flex;
     justify-content: center;
-    margin-left: 40px;
+    margin-left: 0;
     position: relative;
     z-index: 2;
 }
 
 .info-image img {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: auto;
     transform: rotate(5deg);
     border: 15px solid white;
+    transition: 0.5s ease;
 }
 
 .small-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 200px;
-    height: 200px;
+    width: 30%;
+    max-width: 200px;
+    aspect-ratio: 1 / 1;
     transform: rotate(-10deg);
 }
 
@@ -199,10 +199,6 @@ body {
     object-fit: cover;
     border-radius: 8px;
     border: 3px solid white;
-}
-
-.info-image img,
-.small-overlay img {
     transition: 0.5s ease;
 }
 
@@ -254,8 +250,7 @@ body {
 }
 
 .footer-logo {
-    flex: 1;
-    min-width: 250px;
+    flex: 1 1 250px;
 }
 
 .footer-logo img {
@@ -271,7 +266,7 @@ body {
 
 .footer-links {
     display: flex;
-    flex: 2;
+    flex: 2 1 400px;
     flex-wrap: wrap;
     gap: 40px;
 }
@@ -350,11 +345,9 @@ body {
         display: block;
         order: 3;
     }
-}
-
-@media (max-width: 768px) {
     .info-container {
         flex-direction: column;
+        align-items: center;
     }
     .info-image {
         margin-left: 0;
@@ -369,4 +362,3 @@ body {
         gap: 20px;
     }
 }
-    
