@@ -31,21 +31,10 @@ body {
 }
 
 @keyframes slide {
-    0% {
-        background-image: url('bg0.jpg');
-    }
-
-    33% {
-        background-image: url('bg2.jpg');
-    }
-
-    66% {
-        background-image: url('bg3.jpg');
-    }
-
-    100% {
-        background-image: url('bg0.jpg');
-    }
+    0% { background-image: url('bg0.jpg'); }
+    33% { background-image: url('bg2.jpg'); }
+    66% { background-image: url('bg3.jpg'); }
+    100% { background-image: url('bg0.jpg'); }
 }
 
 .navbar {
@@ -57,7 +46,6 @@ body {
     padding: 0 20px;
     position: relative;
     z-index: 10;
-    border: none;
     border-bottom: 1px solid gray;
 }
 
@@ -111,6 +99,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.mr {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
 }
 
 .overlay {
@@ -216,7 +211,6 @@ body {
     transform: rotate(0) scale(1.05);
 }
 
-
 .footer {
     position: relative;
     width: 100%;
@@ -310,3 +304,69 @@ body {
 .footer-links ul li a:hover {
     color: orange;
 }
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    color: blue;
+    min-width: 180px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: blue;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown-menu li a:hover {
+    background: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+@media (max-width: 1200px) {
+    .links,
+    .cta_section {
+        display: none;
+    }
+    .mr {
+        display: block;
+        order: 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+    }
+    .info-image {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+    
