@@ -336,7 +336,7 @@ html, body {
     display: block;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 600px) {
     .links,
     .cta_section {
         display: none;
