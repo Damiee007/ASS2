@@ -65,7 +65,7 @@ ul {
     border: none;
 }
 
-ul li {
+.ul_c {
     background-color: #ffb6c1;
     margin: 5px 0;
     padding: 8px;

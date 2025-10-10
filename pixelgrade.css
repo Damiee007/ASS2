@@ -3,9 +3,7 @@ body {
     min-height: 100vh;
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #9b59b6 50%, #f5f3f6 50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
 }
 
 .pixelgrade-container {

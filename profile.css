@@ -2,28 +2,34 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   background: linear-gradient(135deg, #8a3ffc, #ff5e62);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  min-height: 100vh;
 }
 
 .profile-wrap {
-  width: 100%;
+  width: 90%;
   max-width: 700px;
   border-radius: 18px;
   padding: 50px 20px;
-  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .profile-card {
-  margin-top: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 30px auto;
   background: #fff;
   border-radius: 14px;
   padding: 80px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   position: relative;
+  box-sizing: border-box;
 }
 
 .profile-avatar {
@@ -34,7 +40,7 @@ body {
   position: absolute;
   top: -60px;
   left: 50%;
-  margin-left: -60px;
+  transform: translateX(-50%);
   overflow: hidden;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
@@ -66,12 +72,14 @@ body {
 .stats {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
   margin-top: 20px;
 }
 
 .stat {
   text-align: center;
+  min-width: 80px;
 }
 
 .stat .num {
@@ -87,6 +95,7 @@ body {
 .social-row {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 10px;
   margin-top: 20px;
 }
@@ -106,6 +115,7 @@ body {
 .actions {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 15px;
   margin-top: 20px;
 }
@@ -116,6 +126,12 @@ body {
   border-radius: 25px;
   font-weight: bold;
   cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
 .btn-msg {
@@ -126,4 +142,29 @@ body {
 .btn-follow {
   background: #ff3d6b;
   color: #fff;
+}
+
+@media (max-width: 600px) {
+  .profile-card {
+    padding: 70px 20px 25px;
+  }
+
+  .profile-avatar {
+    width: 100px;
+    height: 100px;
+    top: -50px;
+  }
+
+  .p-name {
+    font-size: 18px;
+  }
+
+  .stats {
+    gap: 10px;
+  }
+
+  .btn {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
 }
